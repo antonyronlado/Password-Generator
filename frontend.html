@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+    <div class="moving">
+        <marquee loop="infinite">&#127882 Exicting Offer!! &#127882 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#127881 Available only Today!! &#127881 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#127882 Exicting Offer!! &#127882 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#127881 Available only Today!! &#127881&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#127882 Exicting Offer!! &#127882 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#127881 Available only Today!! &#127881</marquee>
+    </div>
+    <header>
+    <div id="nav1">
+        <div class="title">Cyber Pass</div>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="openLoginModal()">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="intro">
+        <div class="left">
+            <h1>Welcome to Cyber Pass <br><br> A place where all your passwords will be safe</h1>
+        <button class="try-now" onclick="scrollToGenerator()">Try it Now >></button>
+        </div>
+        <div class="right">
+            <img src="Demo.svg" alt="Password video">
+        </div>
+        </div>
+    </section>
+
+
+    <section class="info">
+        <div class="left">
+            <h1 class="animated-line">Why Cyber Pass?</h1>
+            <p class="animated-line delay-1">Cyber Pass offers a secure and convenient way to manage your passwords.</p>
+            <p class="animated-line delay-2">With features like password generation, storage, and sharing, you can ensure your online accounts are protected.</p>
+            <p class="animated-line delay-3">Say goodbye to weak passwords and hello to a safer online experience.</p>
+            <p class="animated-line delay-4">Join us today and take the first step towards better password management.</p>
+        </div>
+        <div>
+            <img src="Image1.png" alt="Thief Trying to steal password" class="img1">
+        </div>
+
+        
+    </section>
+    <section class="pass-align" id="generator">
+        <div class="container">
+            <h1>🔐 CyberPass</h1>
+            <p>Unique Password for everything</p>
+            <p>No more 1234 or abc</p>
+        <div class="output-section">
+            <input type="text" id="password" readonly />
+            <button id="copy">📋 Copy</button>
+        </div>
+        <div class="options">
+            <label>Password Length:
+                <input type="number" id="length" min="4" max="32" value="12" />
+            </label>
+            <label><input type="checkbox" id="uppercase" checked /> Uppercase</label>
+            <label><input type="checkbox" id="lowercase" checked /> Lowercase</label>
+            <label><input type="checkbox" id="numbers" checked /> Numbers</label>
+            <label><input type="checkbox" id="symbols" /> Symbols</label>
+        </div>
+            <button id="generate">⚙️ Generate Password</button>
+            
+        </div>
+        <div class="pass-text">
+            <h1>No More Fear to lose Your Passwords</h1>
+            <h2>With CyberPass, your passwords are safe and secure.</h2>
+            <p>Generate unique passwords for all your accounts and never worry about forgetting them again.</p>
+            <p>CyberPass uses advanced algorithms to create strong passwords that are hard to crack.</p>
+        </div>
+    </section>
+
+
+    <section class="faq">
+  <h2>Frequently asked questions</h2>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-header">How does the password generator work?</button>
+      <div class="accordion-content">
+        <p>
+            Cyber Pass uses a smart randomization algorithm fueled by your preferences.
+            You choose the length, character types (uppercase, lowercase, numbers, symbols), and readability options.
+            Then, the generator forges a unique password designed to be unpredictable — exactly what hackers hate!
+        </p>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">How to create a strong password?</button>
+      <div class="accordion-content">
+        <p>
+            A powerful password blends chaos with creativity. Aim for 15+ characters,
+            mixing uppercase, lowercase, numbers, and symbols. Avoid anything personal or obvious —
+            no pet names, birthdays, or "password123". Make it strange. Make it strong. Make it yours.
+        </p>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">Can a strong password be hacked?</button>
+      <div class="accordion-content">
+        <p>
+            Theoretically, yes — but practically? Not in your lifetime. A weak password like "123456" can be cracked in seconds.
+            A strong, complex 12-character password with mixed symbols could take centuries to break, even with today's tech.
+            That's why Cyber Pass focuses on strength through entropy.
+        </p>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">Why shouldn’t I reuse the same password?</button>
+      <div class="accordion-content">
+        <p>
+            Reusing passwords is like using the same key for your house, car, locker, and vault — lose it once, lose it all.
+            If one account gets compromised, hackers will try the same password on every service you use.
+            Cyber Pass helps you create a unique fortress for each door.
+        </p>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">Is it better to use passphrases or complex gibberish?</button>
+      <div class="accordion-content">
+        <p>
+            Both are strong when done right. A passphrase like “BluePiano$Eats!Rain” is long and memorable,
+            while a random string like “4k@Q9!zP&mW8” is harder to guess but also harder to remember.
+            Cyber Pass supports both — choose security, then pick your flavor.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">Should I save passwords in my browser?</button>
+      <div class="accordion-content">
+        <p>
+             It's convenient, sure — but not the most secure. Browsers can be vulnerable to malware and local exploits.
+            Dedicated password managers like Cyber Pass encrypt your credentials and protect them behind multi-layered defenses.
+            Convenience doesn’t have to cost you safety.
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">How often should I change my passwords?</button>
+      <div class="accordion-content">
+        <p>
+            Regular updates are a must — especially if a site you use suffers a breach. For critical accounts (like banking or email),
+            update your passwords every 3–6 months. Cyber Pass can notify you when it’s time to refresh and help you generate a fresh one in seconds.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 3023 Cyber Pass. All rights reserved.</p>
+            <ul class="footer-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAllModals()">&times;</span>
+    <h2>Login to Cyber Pass</h2>
+    <input type="text" id="login-username" placeholder="Username" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <input type="tel" id="login-phone" placeholder="Phone (for OTP)" />
+    <button onclick="sendLoginOTP()">Send OTP</button>
+    <input type="text" id="login-otp" placeholder="Enter OTP" class="otp-input" style="display:none;" />
+    <button onclick="verifyLoginOTP()" class="otp-btn" style="display:none;">Login</button>
+    <p class="link-text">
+      <a href="#" onclick="switchModal('register')">New user? Register here</a> | 
+      <a href="#" onclick="switchModal('forgot')">Forgot Password?</a>
+    </p>
+  </div>
+</div>
+
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAllModals()">&times;</span>
+    <h2>Register for Cyber Pass</h2>
+
+    <input type="text" id="reg-name" placeholder="Full Name" />
+    <input type="text" id="reg-username" placeholder="Username" />
+    <input type="password" id="reg-password" placeholder="Password" />
+    <input type="tel" id="reg-phone" placeholder="Phone Number" />
+    
+    <button onclick="sendRegisterOTP()">Send OTP</button>
+
+    <input type="text" id="reg-otp" placeholder="Enter OTP" style="display: none;" />
+    <button id="registerBtn" onclick="registerUser()" style="display: none;">Create Account</button>
+
+    <p class="link-text">
+      <a href="#" onclick="switchModal('login')">Already have an account? Login</a>
+    </p>
+  </div>
+</div>
+
+<div id="forgotModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAllModals()">&times;</span>
+    <h2>Reset Your Password</h2>
+    <input type="text" placeholder="Enter phone/email" />
+    <button onclick="alert('Recovery link/OTP sent! (mock)')">Recover</button>
+    <p class="link-text">
+      <a href="#" onclick="switchModal('login')">Back to Login</a>
+    </p>
+  </div>
+</div>
+
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
