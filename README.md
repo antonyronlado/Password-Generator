@@ -32,7 +32,7 @@ A modern password generator app with dual backend options: **XML** and **MongoDB
 - Node.js + Express + Mongoose
 
 ---
-
+<pre>
 ## 📁 Folder Structure
 Password-Generator/
 ├── frontend/
@@ -47,7 +47,7 @@ Password-Generator/
 │ └── models/
 │ └── User.js
 ├── README.md
-
+</pre>
 ---
 
 ## 🛠️ Technologies Used
